@@ -20,9 +20,9 @@ Sentiment_Analysis_App/
 
 
 # requirements 
-streamlit
-pandas
+streamlit>=1.35
 numpy
-matplotlib
-seaborn
-scikit-learn
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.13
+scikit-learn>=1.3
