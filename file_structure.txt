@@ -1,0 +1,28 @@
+Sentiment_Analysis_App/
+│
+├── app.py
+├── train_model.py
+├── requirements.txt
+├── README.md
+│
+├── data/
+│   └── cjp_comments.csv
+│
+├── model/
+│   ├── sentiment_model.pkl
+│   └── vectorizer.pkl
+│
+└── assets/
+    └── banner.png      (optional)
+
+
+
+
+
+# requirements 
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
