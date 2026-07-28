@@ -20,13 +20,13 @@ A simple Machine Learning-based **Sentiment Analysis Web Application** built usi
 ```
 Sentiment-Analysis/
 │
-├── app.py                  # Streamlit Web Application
-├── train_model.py          # Model Training Script
+├── app.py
+├── train_model.py
 ├── file_structure.txt
 ├── .gitignore
 │
 ├── data/
-│   └── cjp_comments.csv    # Dataset used for training
+│   └── cjp_comments.csv
 │
 ├── model/
 │   ├── sentiment_model.pkl
@@ -48,6 +48,40 @@ Sentiment-Analysis/
 
 ---
 
+# 📊 Dataset
+
+This project was trained using the **Sentiment140 Dataset**, a widely used benchmark dataset for sentiment analysis.
+
+### Dataset Details
+
+- **Dataset Name:** Sentiment140
+- **Source:** Kaggle
+- **Original Data:** 1.6 Million Twitter Tweets
+- **Training File Used:** `data/datasets.csv`
+- **Task:** Binary Sentiment Classification (Positive / Negative)
+
+The original dataset was downloaded from Kaggle and renamed to **`datasets.csv`** for training purposes.
+
+Since the dataset size is approximately **227 MB**, it exceeds GitHub's maximum file size limit of **100 MB**, so it is **not included** in this repository.
+
+However, the repository already contains the trained model (`sentiment_model.pkl`) and vectorizer (`vectorizer.pkl`), allowing the application to run without retraining.
+
+### Download the Dataset
+
+Download the original dataset from Kaggle:
+
+**https://www.kaggle.com/datasets/kazanova/sentiment140**
+
+After downloading, place the dataset inside the `data` folder and rename it to:
+
+```
+data/datasets.csv
+```
+
+Alternatively, you can update the dataset path in `train_model.py`.
+
+---
+
 ## 🚀 Installation
 
 ### 1. Clone the repository
@@ -56,19 +90,19 @@ Sentiment-Analysis/
 git clone https://github.com/Armaanv0843dev/Sentiment-Analysis.git
 ```
 
-### 2. Navigate to the project folder
+### 2. Move into the project folder
 
 ```bash
 cd Sentiment-Analysis
 ```
 
-### 3. Install required libraries
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-If you don't have a requirements file:
+If a `requirements.txt` file is unavailable:
 
 ```bash
 pip install streamlit pandas numpy scikit-learn
@@ -82,53 +116,52 @@ pip install streamlit pandas numpy scikit-learn
 streamlit run app.py
 ```
 
-The application will automatically open in your browser.
+The application will automatically launch in your default browser.
 
 ---
 
 ## 🧠 Machine Learning Workflow
 
-1. Load dataset
-2. Text preprocessing
+1. Load the Sentiment140 dataset
+2. Perform text preprocessing
 3. Convert text into numerical features using CountVectorizer
-4. Train the Machine Learning model
-5. Save trained model using Pickle
-6. Predict sentiment from user input
+4. Train the sentiment classification model
+5. Save the trained model and vectorizer using Pickle
+6. Predict sentiment for user input through the Streamlit interface
 
 ---
 
 ## 📊 Sentiment Classes
 
-| Sentiment | Meaning |
-|-----------|---------|
+| Sentiment | Description |
+|-----------|-------------|
 | 😊 Positive | Positive opinion or emotion |
 | 😞 Negative | Negative opinion or emotion |
+| 🤐 Neutral  | Neutral opinion or emotion  |
 
 ---
 
 ## 💬 Example
 
-**Input**
+### Input
 
 ```
 This product is amazing and works perfectly.
 ```
 
-**Prediction**
+### Prediction
 
 ```
 Positive 😊
 ```
 
----
-
-**Input**
+### Input
 
 ```
 I am very disappointed with this service.
 ```
 
-**Prediction**
+### Prediction
 
 ```
 Negative 😞
@@ -138,7 +171,7 @@ Negative 😞
 
 ## 📷 Application Preview
 
-Add screenshots here.
+Add screenshots of your application here.
 
 ```
 assets/home.png
@@ -147,14 +180,13 @@ assets/predict.png
 
 ---
 
-## 📌 Future Improvements
+## 🚀 Future Improvements
 
-- Add Neutral sentiment class
-- Improve preprocessing
-- Display prediction confidence
-- Support multiple ML models
-- Upload CSV for batch prediction
-- Model comparison dashboard
+- Add Neutral sentiment classification
+- Improve text preprocessing
+- Display prediction confidence score
+- Compare multiple ML algorithms
+- CSV batch prediction
 - Deploy on Streamlit Community Cloud
 
 ---
@@ -164,7 +196,7 @@ assets/predict.png
 Contributions are welcome.
 
 1. Fork the repository
-2. Create a new branch
+2. Create a feature branch
 
 ```bash
 git checkout -b feature-name
@@ -176,13 +208,13 @@ git checkout -b feature-name
 git commit -m "Added new feature"
 ```
 
-4. Push to GitHub
+4. Push your branch
 
 ```bash
 git push origin feature-name
 ```
 
-5. Create a Pull Request
+5. Open a Pull Request
 
 ---
 
@@ -196,6 +228,4 @@ git push origin feature-name
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a **⭐ Star** on GitHub.
-
-It helps others discover the project and motivates future improvements.
+If you found this project helpful, please consider giving it a **⭐ Star** on GitHub. It helps support the project and encourages future improvements.
