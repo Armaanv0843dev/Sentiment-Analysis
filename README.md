@@ -27,6 +27,7 @@ Sentiment-Analysis/
 │
 ├── data/
 │   └── cjp_comments.csv
+|   └── datasets.csv(a twitter 1.6 million tweets datasets #for further details scroll down)
 │
 ├── model/
 │   ├── sentiment_model.pkl
