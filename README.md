@@ -4,7 +4,7 @@ A simple Machine Learning-based **Sentiment Analysis Web Application** built usi
 
 ---
 
-## 📌 Features
+## 📌 Features ##
 
 - 🔍 Predict sentiment of any English text
 - 🤖 Machine Learning model for sentiment classification
