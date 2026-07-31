@@ -1,4 +1,4 @@
-# 😊 Sentiment Analysis Web App
+## 😊 Sentiment Analysis Web App
 
 A simple Machine Learning-based **Sentiment Analysis Web Application** built using **Python** and **Streamlit**. This application predicts whether a given English sentence expresses a **Positive** or **Negative** sentiment using a trained ML model.
 
@@ -49,7 +49,7 @@ Sentiment-Analysis/
 
 ---
 
-# 📊 Dataset
+## 📊 Dataset
 
 This project was trained using the **Sentiment140 Dataset**, a widely used benchmark dataset for sentiment analysis.
 
